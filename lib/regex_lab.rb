@@ -20,11 +20,11 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
   punctuation = text.scan(/(\.$)/)
   if capital[0].is_a?(Array) && punctuation[0].is_a?(Array)
     true
-  else#if capital || punctuation == []
+  else
     false
   end
 end
 
 def valid_phone_number?(phone)
-
+  
 end
