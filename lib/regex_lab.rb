@@ -16,12 +16,7 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  grammar = text.scan(/(^[A-Z]).+(\.)/)
-  if grammar[0].count == 2
-    true
-  else
-    false
-  end
+  text.scan(/(^[A-Z]).+(\.)/)
 end
 
 def valid_phone_number?(phone)
