@@ -20,7 +20,7 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
   punctuation = text.scan(/(\.$)/)
   if capital[0].is_a?(Array) && punctuation[0].is_a?(Array)
     true
-  elsif capital || punctuation == []
+  else#if capital || punctuation == []
     false
   end
 end
