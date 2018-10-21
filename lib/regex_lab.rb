@@ -18,10 +18,10 @@ end
 def first_word_capitalized_and_ends_with_punctuation?(text)
   capital = text.scan(/(^[A-Z])/)
   puncutation = text.scan(/(\.$)/)
-  if capital || punctuation == []
-    false
-  else
+  if capital && punctuation != nil
     true
+  else
+    false
   end
 end
 
