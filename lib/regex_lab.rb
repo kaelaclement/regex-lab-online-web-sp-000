@@ -17,10 +17,10 @@ end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
   grammar = text.scan(/(^[A-Z]).+(\.)/)
-  if grammar == nil
-    false
-  else
+  if grammar[0].length == 2
     true
+  else
+    false
   end
 end
 
